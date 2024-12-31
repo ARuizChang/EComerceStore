@@ -6,16 +6,15 @@ export default {
   ],
   theme: {
     extend: {
-        animation: {
-          gradient: 'gradient 10s ease-in-out infinite', // Define the animation
+      animation: {
+        'text': 'text 3s ease infinite',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
         },
-        keyframes: {
-          gradient: {
-            '0%': { transform: 'scale(1)' },
-            '50%': { transform: 'scale(1.05)' },
-            '100%': { transform: 'scale(1)' },
-          },
-        },
+      },
     },
   },
   plugins: [],
