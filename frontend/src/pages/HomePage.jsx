@@ -3,24 +3,49 @@ import CategoryItem from '../components/CategoryItem';
 import { useProductStore } from '../stores/useProductStore';
 import FeaturedProducts from '../components/FeaturedProducts';
 
-
 const categories = [
-  { href: "/electronics", name: "Electronics", imageUrl: "/technology.jpg" },
-  { href: "/footwear", name: "Footwear", imageUrl: "/shoes.jpg" },
-  { href: "/nutrition", name: "Nutrition", imageUrl: "/nutrition.jpg" },
-  { href: "/sports", name: "Sports Equipment", imageUrl: "/fitness.jpg" },
-  { href: "/health", name: "Health and Wellness", imageUrl: "/oil.jpg" },
-  { href: "/accessories", name: "Sport Accessories", imageUrl: "waterBottle.jpg" },
+  { 
+    href: "/electronics", 
+    name: "Electronics", 
+    imageUrl: "/technology.jpg" 
+  },
+  { 
+    href: "/footwear", 
+    name: "Footwear", 
+    imageUrl: "/shoes.jpg" 
+  },
+  { 
+    href: "/nutrition", 
+    name: "Nutrition", 
+    imageUrl: "/nutrition.jpg" 
+  },
+  { 
+    href: "/sports", 
+    name: "Sports Equipment", 
+    imageUrl: "/fitness.jpg" 
+  },
+  { 
+    href: "/health", 
+    name: "Health and Wellness", 
+    imageUrl: "/oil.jpg" 
+  },
+  { 
+    href: "/accessories", 
+    name: "Sport Accessories", 
+    imageUrl: "waterBottle.jpg" 
+  },
 ];
 
 const HomePage = () => {
-
-  const { fetchFeaturedProducts, products, isLoading } = useProductStore();
+  const { 
+    fetchFeaturedProducts, 
+    products, 
+    isLoading 
+  } = useProductStore();
 
   useEffect(() => {
     fetchFeaturedProducts();
   }, [fetchFeaturedProducts]);
-
 
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -28,6 +53,7 @@ const HomePage = () => {
         <h1 className="text-center text-5xl sm:text-6xl font-bold text-cyan-400 mb-4">
           Explore Our Categories
         </h1>
+        
         <p className="text-center text-xl text-gray-300 mb-12">
           Discover the lastest sport trends and accessories
         </p>
@@ -41,11 +67,14 @@ const HomePage = () => {
           ))}
         </div>
 
-        {!isLoading && products.length > 0 && <FeaturedProducts featuredProducts={products} />}
-
+        {!isLoading && products.length > 0 && (
+          <FeaturedProducts 
+            featuredProducts={products} 
+          />
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
