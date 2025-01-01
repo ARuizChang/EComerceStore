@@ -2,6 +2,8 @@
 
 Welcome to **ECommerceStore**, a fully functional e-commerce platform built with modern web technologies. This project is designed to provide a seamless shopping experience for users while offering an intuitive interface for administrators to manage products, orders, and more.
 
+Check out the demo [here](https://ecomercestore.onrender.com/).
+
 ---
 
 ## Features
