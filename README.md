@@ -85,7 +85,7 @@ This project is licensed under the [MIT](https://choosealicense.com/licenses/mit
 
 ## Acknowledgments
 
-- Made using the [Build an E-Commerce Store and Admin Dashboard - React.js, Stripe, Node.js, Redis](https://youtu.be/sX57TLIPNx8?si=JmmIlHWB0ZAoaWAW)
+- Made using the [Build an E-Commerce Store and Admin Dashboard - React.js, Stripe, Node.js, Redis](https://youtu.be/sX57TLIPNx8?si=JmmIlHWB0ZAoaWAW) tutorial.
 
 ---
 
