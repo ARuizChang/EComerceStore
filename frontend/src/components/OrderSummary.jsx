@@ -75,11 +75,11 @@ const OrderSummary = () => {
                 </motion.button>
                 {total > 200 ? (
                     <div className="flex items-center justify-center gap-2">
-                        <span className='text-xs font-normal text-gray-400'>You are eligible for a 10% discount on your next purchase</span>    
+                        <span className='text-sm font-normal text-gray-400'>You are eligible for a 10% discount on your next purchase.</span>    
                     </div>
                 ) : (
                     <div className="flex items-center justify-center gap-2">
-                        <span className='text-xs font-normal text-gray-400'>spend {(200 - total).toFixed(2)}{"$"} more to get a 10% discount</span>    
+                        <span className='text-sm font-normal text-gray-400'>Spend {"$"}{(200 - total).toFixed(2)} more to get a 10% discount on your next purchase.</span>    
                     </div>
                 )}
 
