@@ -18,7 +18,7 @@ Welcome to **ECommerceStore**, a fully functional e-commerce platform built with
 - **Frontend**: React.js, Tailwind
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
+- **Authentication**: JWT (JSON Web Tokens), Redis
 - **Payment Integration**: Stripe (for secure payment processing)
 
 ---
