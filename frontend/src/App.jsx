@@ -32,10 +32,10 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
       <div className='absolute inset-0 overflow-hidden'>
-        <div className='absolute inset-0 animate-gradient'>
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,#4A90E2_0%,#6A9BD2_50%,#4A7BA6_100%)] opacity-50' />
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_bottom,#4A90E2_0%,#6A9BD2_50%,#4A7BA6_100%)] opacity-50' />
-        </div>
+      <div className='absolute inset-0 animate-gradient'>
+  <div className='absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,#F9FBFF_0%,#E6F0FA_50%,#DDE8F5_100%)] opacity-70 mix-blend-overlay' />
+  <div className='absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_bottom,#F9FBFF_0%,#E6F0FA_50%,#DDE8F5_100%)] opacity-70 mix-blend-overlay' />
+</div>
       </div>
 
       <div className='relative z-50 pt-20'>
